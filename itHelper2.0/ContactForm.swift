@@ -68,18 +68,18 @@ struct ContactForm: View {
 }
 
 
-struct ContactForm_Previews: PreviewProvider {
+//struct ContactForm_Previews: PreviewProvider {
     
-    static let moc = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
+    //static let moc = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
     
-    static var previews: some View {
+   // static var previews: some View {
         
-        let orgs = Organization(context: moc)
+      //  let orgs = Organization(context: moc)
         
-        return NavigationView{
+       // return NavigationView{
             
-            ContactsView(orgs: orgs)
+         //   ContactsView(orgs: orgs)
             
-        }
-    }
-}
+       // }
+  //  }
+//}

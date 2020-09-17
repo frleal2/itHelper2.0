@@ -55,7 +55,7 @@ struct OrganizationForm: View {
                         .foregroundColor(Color.blue)
                    
                 }.buttonStyle(BorderlessButtonStyle())
-                 .offset(x: 145)
+                 .offset(x: 135)
                     .sheet(isPresented: self.$show, content: {
                         ImagePicker(show: self.$show, image: self.$image)
                     })
