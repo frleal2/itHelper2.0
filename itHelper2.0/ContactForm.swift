@@ -39,7 +39,7 @@ struct ContactForm: View {
             }.listStyle(GroupedListStyle())
             .navigationBarTitle("New Contact", displayMode: .inline)
             .navigationBarItems(trailing:
-            Button(action: {
+                                    Button(action: {
              guard self.first_Name != "" else {return}
                 
               let newContact = Contact(context: self.managedObjectContext)
@@ -50,6 +50,7 @@ struct ContactForm: View {
                 newContact.phone = self.phone
                 //newContact.organization = self.orgs
                 
+                //FIXME: Error, may be wrong call
                 self.orgs.addToContact(newContact)
              
              do {
